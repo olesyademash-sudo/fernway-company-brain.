@@ -1,8 +1,8 @@
-# Глосарій
+# Glossary
 
-Терміни, абревіатури та внутрішній жаргон компанії. Підтримуй алфавітний порядок.
+Company terms, abbreviations and internal jargon. Keep entries in alphabetical order.
 
-**Термін** — пояснення.
+**Term** — explanation.
 
 **Account** — a customer (usually a café or restaurant group). One account has many venues. Contracts are per account. See [product overview](docs/product/overview.md#accounts--venues).
 
