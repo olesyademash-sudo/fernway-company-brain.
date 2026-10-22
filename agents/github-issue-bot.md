@@ -5,7 +5,7 @@ this repository, using the Company Brain as its only source.
 
 | | |
 |---|---|
-| **Status** | 🟡 **Live, not yet verified.** Merged to `main`; no successful run yet. |
+| **Status** | 🟢 **Live.** First test run succeeded on 2026-10-22. |
 | **Model** | Claude Opus 5.5 (`claude-opus-5-5`), with Anthropic's default refusal fallback |
 | **Runs in** | GitHub Actions: [`.github/workflows/claude-issue-responder.yml`](../.github/workflows/claude-issue-responder.yml) |
 | **Code** | [`scripts/claude_issue_responder.py`](../scripts/claude_issue_responder.py) |
@@ -71,8 +71,7 @@ change files or open PRs.
 ## Open questions
 
 - [ ] **Owner:** who maintains the bot and watches its costs?
-- [ ] **First verified run:** open a test issue (`@claude What is T2L?`) and
-      update the status above once it answers correctly.
+- [x] **First verified run:** tested on 2026-10-22; the workflow run succeeded and the bot answered correctly.
 - [ ] **API key provenance:** which Anthropic account or workspace, any spend
       limit, and where the key is stored in 1Password.
 - [ ] **Scaling:** once the docs outgrow a single request, switch to sending
