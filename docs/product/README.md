@@ -1,3 +1,3 @@
 # Product
 
-Продуктове бачення, роадмап, специфікації та продуктові рішення.
+Product vision, roadmap, specifications and product decisions.

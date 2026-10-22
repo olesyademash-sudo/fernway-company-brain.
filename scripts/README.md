@@ -1,3 +1,3 @@
 # Scripts
 
-Допоміжні скрипти для обслуговування репозиторію (перевірки, генерація індексів тощо).
+Helper scripts for maintaining the repository (checks, index generation and so on).

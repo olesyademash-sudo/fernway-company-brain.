@@ -1,3 +1,3 @@
 # Agents
 
-Реєстр AI-агентів компанії: що кожен робить, хто власник і до чого має доступ.
+Registry of the company's AI agents: what each one does, who owns it and what it can access.

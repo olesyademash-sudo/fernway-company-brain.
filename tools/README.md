@@ -1,3 +1,3 @@
 # Tools
 
-Конфігурації та інтеграції інструментів, які живлять цей репозиторій (Slack, Notion, Drive, Gmail).
+Configurations and integrations for the tools that feed this repository (Slack, Notion, Drive, Gmail).

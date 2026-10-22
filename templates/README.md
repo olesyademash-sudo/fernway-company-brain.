@@ -1,3 +1,3 @@
 # Templates
 
-Шаблони для нових документів, ранбуків, рішень і реєстрації агентів.
+Templates for new documents, runbooks, decisions and agent registrations.

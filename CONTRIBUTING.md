@@ -23,8 +23,8 @@ These rules are non-negotiable. A PR that breaks them doesn't get merged.
 
 ## How to make a change
 
-1. Create a branch from `main`: `docs/<short-description>`, `runbook/<...>`,
-   `agent/<...>`.
+1. Create a branch from `main` named `feature/<short-description>`, e.g.
+   `feature/docs-product` or `feature/runbook-staging-reset`.
 2. Add or edit Markdown files (templates are in [templates/](templates/)).
 3. Open a Pull Request with a description: what changed and where the
    information came from.
