@@ -32,8 +32,9 @@ Enterprise competitors take weeks to configure. With Fernway, a venue
 
 ### Core metric: T2L (Time To Live)
 
-**T2L** is how long it takes a new venue to go live. It is the core metric we
-watch. When we prioritize work, ask whether it keeps T2L under a day or makes
+**T2L** is the time from **contract signed** to **first schedule published**
+(see [Product Overview](../product/overview.md#t2l-time-to-live)). It is the
+core metric we watch. When we prioritize work, ask whether it keeps T2L under a day or makes
 it shorter.
 
 ## Values & rules
