@@ -42,7 +42,7 @@ The Friday freeze is a strict rule. See
 
 Staging is where every change is tested before release.
 
-- **Reset process:** currently known **only by Ana**. It isn't documented yet.
+- **Reset process:** currently known **only by Ana**. See the runbook [Staging reset](../../runbooks/staging-reset.md) (draft; Ana still needs to write the steps).
 
 ## Known tech issues
 
@@ -70,6 +70,6 @@ Company Brain exists to prevent. Each item should become a runbook in
 
 | Knowledge | Only known by | Should become |
 |---|---|---|
-| How to reset staging | Ana | `runbooks/staging-reset.md` |
+| How to reset staging | Ana | [`runbooks/staging-reset.md`](../../runbooks/staging-reset.md) (draft) |
 | CSV importer workaround | Noor | [`runbooks/csv-importer-fix.md`](../../runbooks/csv-importer-fix.md) (draft) |
 | How the n8n instance is hosted and run | Ivan | `runbooks/n8n-operations.md` |
