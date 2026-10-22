@@ -59,7 +59,7 @@ Staging is where every change is tested before release.
 - **Problem:** the staff CSV importer fails when:
   - the file contains **non-Latin characters**, or
   - the file was created in **Apple Numbers**.
-- **Workaround:** **Noor** knows it. It isn't documented yet.
+- **Workaround:** see the runbook [CSV importer fails during onboarding](../../runbooks/csv-importer-fix.md). The fix steps are still to be written by **Noor**.
 - **Status:** open.
 
 ## ⚠️ Knowledge gaps (single points of failure)
@@ -71,5 +71,5 @@ Company Brain exists to prevent. Each item should become a runbook in
 | Knowledge | Only known by | Should become |
 |---|---|---|
 | How to reset staging | Ana | `runbooks/staging-reset.md` |
-| CSV importer workaround | Noor | `runbooks/csv-import-workaround.md` |
+| CSV importer workaround | Noor | [`runbooks/csv-importer-fix.md`](../../runbooks/csv-importer-fix.md) (draft) |
 | How the n8n instance is hosted and run | Ivan | `runbooks/n8n-operations.md` |
