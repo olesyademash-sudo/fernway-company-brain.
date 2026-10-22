@@ -12,6 +12,6 @@
 
 **Pay rules** — automatic checks of schedules against local break and overtime rules, per country.
 
-**T2L (Time To Live)** — time from contract signed to first schedule published. Our core metric. See [product overview](docs/product/overview.md#t2l-time-to-live).
+**T2L (Time To Live)** — time from contract signed to first schedule published. Our core metric. Target: under a day (in practice, sometimes 1–3 days). See [product overview](docs/product/overview.md#t2l-time-to-live).
 
 **Venue** — a single location within an account. Billing is per venue.

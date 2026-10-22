@@ -27,15 +27,19 @@ independent café and restaurant groups.
 
 **Fast onboarding is our edge.**
 
-Enterprise competitors take weeks to configure. With Fernway, a venue
-**goes live in under a day**.
+Enterprise competitors take weeks to configure. With Fernway, we aim for a
+venue to **go live in under a day**.
 
 ### Core metric: T2L (Time To Live)
 
 **T2L** is the time from **contract signed** to **first schedule published**
 (see [Product Overview](../product/overview.md#t2l-time-to-live)). It is the
-core metric we watch. When we prioritize work, ask whether it keeps T2L under a day or makes
-it shorter.
+core metric we watch.
+
+- **Target:** under a day.
+- **In practice:** some onboardings take 1–3 days.
+
+When we prioritize work, ask whether it brings T2L closer to under a day.
 
 ## Values & rules
 
