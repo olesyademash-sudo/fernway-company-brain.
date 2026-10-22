@@ -69,7 +69,7 @@ new people.
 
 - **Status:** open. Nobody has documented a fix or an owner yet.
 - **Next step:** move the onboarding checklist from Notion (legacy) into this
-  repository, ideally as `runbooks/new-hire-onboarding.md`, and name an owner
+  repository, ideally as [`runbooks/new-hire-onboarding.md`](../../runbooks/new-hire-onboarding.md) (draft), and name an owner
   for account creation.
 
 ## ⚠️ Single points of failure
