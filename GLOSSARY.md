@@ -4,4 +4,14 @@
 
 **Термін** — пояснення.
 
-**T2L (Time To Live)** — how long it takes a new venue to go live on Fernway Shifts; our core metric (target: under a day). See [mission-values](docs/company/mission-values.md).
+**Account** — a customer (usually a café or restaurant group). One account has many venues. Contracts are per account. See [product overview](docs/product/overview.md#accounts--venues).
+
+**Activation gap** — Sales, CS and Metabase each define "activation" differently, so their numbers don't match. See [product overview](docs/product/overview.md#activation-gap).
+
+**Ghost shift** — a published shift that nobody claimed. Our top customer complaint.
+
+**Pay rules** — automatic checks of schedules against local break and overtime rules, per country.
+
+**T2L (Time To Live)** — time from contract signed to first schedule published. Our core metric. See [product overview](docs/product/overview.md#t2l-time-to-live).
+
+**Venue** — a single location within an account. Billing is per venue.
