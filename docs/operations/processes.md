@@ -5,7 +5,7 @@ which tools we use.
 
 ## Customer onboarding
 
-**Owner:** Lukas · **Target T2L:** 1–3 days
+**Owner:** Lukas · **Target T2L:** under a day (in practice, sometimes 1–3 days)
 
 ```
 Contract signed (HubSpot)
