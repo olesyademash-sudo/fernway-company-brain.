@@ -1,0 +1,60 @@
+name: Claude issue responder
+
+# Answers questions that mention @claude on issues, using the Company Brain docs.
+# Requires the repository secret ANTHROPIC_API_KEY.
+
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: claude-issue-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  respond:
+    # Only on issues (not PR comments), only when @claude is mentioned, and only
+    # for people with write access to the repo, so outsiders can't spend API credits.
+    if: >-
+      !github.event.issue.pull_request &&
+      (
+        (github.event_name == 'issues' &&
+          contains(github.event.issue.body, '@claude') &&
+          contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
+        (github.event_name == 'issue_comment' &&
+          contains(github.event.comment.body, '@claude') &&
+          contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Anthropic SDK
+        run: pip install "anthropic==1.17.0"
+
+      - name: Generate answer
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Untrusted text is passed through env vars, never interpolated into the script.
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          OUTPUT_FILE: ${{ runner.temp }}/answer.md
+        run: python scripts/claude_issue_responder.py
+
+      - name: Post answer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/answer.md"
