@@ -1,3 +1,3 @@
 # Go-to-Market
 
-Маркетинг, продажі, позиціонування, ціноутворення та робота з клієнтами.
+Marketing, sales, positioning, pricing and customer relationships.

@@ -17,7 +17,7 @@ truth.
 | I want to...                    | Go to...                                                           |
 |---------------------------------|--------------------------------------------------------------------|
 | Get access for the first time   | [runbooks/new-hire-onboarding.md](runbooks/new-hire-onboarding.md) |
-| Understand how we work          | [docs/company/ways-of-working.md](docs/company/ways-of-working.md) |
+| Understand how we work          | [docs/company/mission-values.md](docs/company/mission-values.md)   |
 | Follow a step-by-step procedure | [runbooks/](runbooks/)                                             |
 | Find or register an AI agent    | [agents/](agents/)                                                 |
 

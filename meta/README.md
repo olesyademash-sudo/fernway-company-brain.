@@ -1,3 +1,3 @@
 # Meta
 
-Документація про сам Company Brain: як він влаштований, конвенції та процес підтримки.
+Documentation about the Company Brain itself: how it's organized, its conventions and how it's maintained.

@@ -63,8 +63,8 @@ Suggest creating the relevant document through a Pull Request.
 
 - Never commit or push directly to `main`.
 - For any change: create a branch → commit → open a Pull Request.
-- Branch names: `docs/<short-description>`, `runbook/<...>`, `agent/<...>`,
-  and so on.
+- Branch names: `feature/<short-description>`, e.g. `feature/docs-product`
+  or `feature/runbook-staging-reset`.
 - The PR description should explain what changed and where the information
   came from (the source).
 

@@ -1,3 +1,3 @@
 # Engineering
 
-Архітектура, технічні рішення, стандарти коду та інженерні процеси.
+Architecture, technical decisions, coding standards and engineering processes.

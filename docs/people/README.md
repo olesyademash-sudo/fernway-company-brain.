@@ -1,3 +1,3 @@
 # People
 
-Онбординг, ролі, командні процеси та політики для людей (без персональних даних і зарплат).
+Onboarding, roles, team processes and people policies (no personal data or salaries).

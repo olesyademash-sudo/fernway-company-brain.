@@ -1,3 +1,3 @@
 # Runbooks
 
-Покрокові інструкції для повторюваних процедур та реагування на інциденти.
+Step-by-step instructions for recurring procedures and incident response.

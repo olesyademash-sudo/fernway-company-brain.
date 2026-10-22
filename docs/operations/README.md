@@ -1,3 +1,3 @@
 # Operations
 
-Внутрішні операційні процеси: інструменти, закупівлі, юридичні та адміністративні питання.
+Internal operational processes: tools, procurement, legal and admin matters.

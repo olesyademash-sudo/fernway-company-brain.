@@ -1,3 +1,3 @@
 # Company
 
-Місія, цінності, стратегія, структура компанії та те, як ми працюємо разом.
+Mission, values, strategy, company structure, and how we work together.
