@@ -21,7 +21,7 @@ Contract signed (HubSpot)
 |---|---|---|
 | 1 | **Contract signed** in HubSpot | T2L clock starts. |
 | 2 | **Setup call** (45 min) | |
-| 3 | **CSV import** of venues and staff | The importer fails on non-Latin characters and Apple Numbers files. See [known issues](../engineering/architecture.md#csv-staff-importer-fails-on-some-files). |
+| 3 | **CSV import** of venues and staff | The importer fails on non-Latin characters and Apple Numbers files. If it fails, follow the [CSV importer runbook](../../runbooks/csv-importer-fix.md). |
 | 4 | **Configure pay rules** | Local break and overtime rules, per country. |
 | 5 | **First schedule published** | T2L clock stops. |
 | 6 | **7-day check-in** | |
