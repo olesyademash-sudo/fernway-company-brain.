@@ -1,24 +1,24 @@
 # 🧠 The Company Brain
 
-Єдине спільне джерело правди для всього, що знає команда.
+The single shared source of truth for everything the team knows.
 
-Якщо комусь довелось би питати колегу, щоб щось дізнатись — це має
-бути записано тут. Мета проста: ніхто не повинен бути єдиною точкою
-відмови, і жодне знання не повинно жити лише в чиїйсь голові, одному
-Slack-треді чи одному Google Docs.
+If someone would have to ask a colleague to find something out, it should be
+written down here. The goal is simple: nobody should be a single point of
+failure, and no knowledge should live only in someone's head, one Slack
+thread or one Google Doc.
 
-Цей "мозок" — docs-as-code: звичайний Markdown, версіонований у Git,
-з рев'ю через Pull Request, читабельний і людьми, і AI-агентами.
-Інші інструменти (Slack, Notion, Drive, Gmail) живлять цей
-репозиторій — саме він є джерелом правди.
+This "brain" is docs-as-code: plain Markdown, versioned in Git, reviewed
+through Pull Requests, and readable by both people and AI agents. Other
+tools (Slack, Notion, Drive, Gmail) feed this repository. It is the source of
+truth.
 
 ## 🚦 Start here
 
-| Хочу...                           | Йти в...                                                           |
-|-----------------------------------|--------------------------------------------------------------------|
-| Отримати доступ вперше            | [runbooks/new-hire-onboarding.md](runbooks/new-hire-onboarding.md) |
-| Зрозуміти, як ми працюємо         | [docs/company/ways-of-working.md](docs/company/ways-of-working.md) |
-| Виконати покрокову процедуру      | [runbooks/](runbooks/)                                             |
-| Знайти чи зареєструвати AI-агента | [agents/](agents/)                                                 |
+| I want to...                    | Go to...                                                           |
+|---------------------------------|--------------------------------------------------------------------|
+| Get access for the first time   | [runbooks/new-hire-onboarding.md](runbooks/new-hire-onboarding.md) |
+| Understand how we work          | [docs/company/ways-of-working.md](docs/company/ways-of-working.md) |
+| Follow a step-by-step procedure | [runbooks/](runbooks/)                                             |
+| Find or register an AI agent    | [agents/](agents/)                                                 |
 
-Хочеш щось додати чи виправити? Дивись [CONTRIBUTING.md](CONTRIBUTING.md).
+Want to add or fix something? See [CONTRIBUTING.md](CONTRIBUTING.md).

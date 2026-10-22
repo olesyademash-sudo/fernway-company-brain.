@@ -1,41 +1,41 @@
 # Contributing
 
-Як додавати й змінювати знання в Company Brain.
+How to add and change knowledge in the Company Brain.
 
 ## 🚫 Hard rules
 
-Ці правила не обговорюються. PR, що їх порушує, не мержиться.
+These rules are non-negotiable. A PR that breaks them doesn't get merged.
 
-1. **Усі зміни — тільки через Pull Request.** Ніколи не комітити й не пушити
-   напряму в `main`.
-2. **Ніяких секретів.** Ніколи не додавати паролі, API-ключі, токени доступу
-   чи інші облікові дані в жодному файлі. Замість значення — вкажи, де
-   секрет зберігається (наприклад, у менеджері паролів).
-3. **Ніяких даних клієнтів.** Ніколи не додавати персональні чи фінансові
-   дані клієнтів.
-4. **Дуже чутливі внутрішні дані — поза репозиторієм.** Зарплати та подібна
-   конфіденційна інформація тут не зберігається.
-5. **Тільки командні знання.** Особисті нотатки й рефлексії конкретної людини
-   сюди не йдуть — це не про командний мозок.
+1. **All changes go through a Pull Request.** Never commit or push directly
+   to `main`.
+2. **No secrets.** Never add passwords, API keys, access tokens or other
+   credentials to any file. Instead of the value, say where the secret is
+   stored (for example, in the password manager).
+3. **No customer data.** Never add customer personal or financial data.
+4. **Highly sensitive internal data stays outside the repository.** Salaries
+   and similar confidential information aren't stored here.
+5. **Team knowledge only.** One person's private notes and reflections don't
+   belong here. This is a team brain.
 
-> Якщо секрет чи чутливі дані випадково потрапили в репозиторій — видалення
-> файлу не допоможе, вони лишаються в історії Git. Одразу повідом власників
-> репозиторію та ротуй скомпрометований секрет.
+> If a secret or sensitive data gets into the repository by accident,
+> deleting the file isn't enough: it stays in the Git history. Tell the
+> repository owners right away and rotate the compromised secret.
 
-## Як внести зміну
+## How to make a change
 
-1. Створи гілку від `main`: `docs/<короткий-опис>`, `runbook/<...>`,
+1. Create a branch from `main`: `docs/<short-description>`, `runbook/<...>`,
    `agent/<...>`.
-2. Додай або зміни Markdown-файли (шаблони — у [templates/](templates/)).
-3. Відкрий Pull Request з описом: що змінено і звідки інформація.
-4. Дочекайся рев'ю хоча б однієї людини, потім мерж.
+2. Add or edit Markdown files (templates are in [templates/](templates/)).
+3. Open a Pull Request with a description: what changed and where the
+   information came from.
+4. Wait for a review from at least one person, then merge.
 
-## Куди що класти
+## Where things go
 
-| Що                               | Куди                    |
-|----------------------------------|-------------------------|
-| Пояснення "що це і чому"         | `docs/<домен>/`         |
-| Покрокова процедура              | `runbooks/`             |
-| Опис AI-агента                   | `agents/`               |
-| Новий термін чи абревіатура      | `GLOSSARY.md`           |
-| Шаблон нового типу документа     | `templates/`            |
+| What                                   | Where             |
+|----------------------------------------|-------------------|
+| An explanation of "what it is and why" | `docs/<domain>/`  |
+| A step-by-step procedure               | `runbooks/`       |
+| A description of an AI agent           | `agents/`         |
+| A new term or abbreviation             | `GLOSSARY.md`     |
+| A template for a new document type     | `templates/`      |

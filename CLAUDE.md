@@ -1,94 +1,96 @@
 # CLAUDE.md
 
-Інструкції для Claude та інших AI-агентів, які працюють із цим репозиторієм.
+Instructions for Claude and other AI agents working with this repository.
 
-## Що це за репозиторій
+## What this repository is
 
-Це **Company Brain** — єдине джерело правди компанії. Усе, що знає команда,
-записано тут у форматі docs-as-code: звичайний Markdown, версіонований у Git,
-зі змінами через Pull Request.
+This is the **Company Brain**, the company's single source of truth.
+Everything the team knows is written down here as docs-as-code: plain
+Markdown, versioned in Git, with changes made through Pull Requests.
 
-Це **не кодова база**. Тут немає застосунку, який треба збирати чи тестувати.
-Основна робота — читати, шукати, писати й уточнювати документацію.
+This is **not a codebase**. There is no application to build or test. The
+main work is reading, searching, writing and refining documentation.
 
-Інші інструменти (Slack, Notion, Google Drive, Gmail) — це джерела, які живлять
-цей репозиторій. Якщо інформація в них суперечить написаному тут, джерелом
-правди вважається цей репозиторій — але про розбіжність варто повідомити.
+Other tools (Slack, Notion, Google Drive, Gmail) are sources that feed this
+repository. If information in them contradicts what's written here, this
+repository is the source of truth. Still, report the discrepancy.
 
-## Структура
+## Structure
 
 ```
-docs/                 Довідкові знання, згруповані за доменами
-  company/            Місія, цінності, стратегія, ways of working
-  engineering/        Архітектура, технічні рішення, інженерні стандарти
-  product/            Продуктове бачення, роадмап, специфікації
-  operations/         Внутрішні операційні процеси, інструменти, адмін
-  go-to-market/       Маркетинг, продажі, позиціонування, клієнти
-  people/             Онбординг, ролі, командні процеси та політики
-runbooks/             Покрокові процедури ("як зробити X")
-agents/               Реєстр AI-агентів: призначення, власник, доступи
-templates/            Шаблони для нових документів
-meta/                 Документація про сам Company Brain
-scripts/              Допоміжні скрипти для обслуговування репозиторію
-tools/                Конфігурації інтеграцій із зовнішніми інструментами
-GLOSSARY.md           Терміни та абревіатури компанії
-CONTRIBUTING.md       Правила внесення змін (обов'язкові)
+docs/                 Reference knowledge, grouped by domain
+  company/            Mission, values, strategy, ways of working
+  engineering/        Architecture, technical decisions, engineering standards
+  product/            Product vision, roadmap, specifications
+  operations/         Internal operational processes, tools, admin
+  go-to-market/       Marketing, sales, positioning, customers
+  people/             Onboarding, roles, team processes and policies
+runbooks/             Step-by-step procedures ("how to do X")
+agents/               Registry of AI agents: purpose, owner, access
+templates/            Templates for new documents
+meta/                 Documentation about the Company Brain itself
+scripts/              Helper scripts for maintaining the repository
+tools/                Configurations for integrations with external tools
+GLOSSARY.md           Company terms and abbreviations
+CONTRIBUTING.md       Rules for making changes (mandatory)
 ```
 
-Куди що класти:
+Where things go:
 
-- **Пояснення "що це і чому"** → `docs/<домен>/`
-- **Інструкція "як зробити крок за кроком"** → `runbooks/`
-- **Опис AI-агента** → `agents/`
-- **Новий термін чи абревіатура** → `GLOSSARY.md`
-- **Новий тип документа** → спершу шаблон у `templates/`
+- **An explanation of "what it is and why"** → `docs/<domain>/`
+- **Step-by-step instructions for "how to do it"** → `runbooks/`
+- **A description of an AI agent** → `agents/`
+- **A new term or abbreviation** → `GLOSSARY.md`
+- **A new document type** → first create a template in `templates/`
 
-## Правила
+## Rules
 
-### 1. Спершу шукай у docs/, не вигадуй
+### 1. Search docs/ first, don't make things up
 
-Перш ніж відповідати на будь-яке запитання про компанію (процеси, рішення,
-людей, продукт, клієнтів, інструменти):
+Before answering any question about the company (processes, decisions,
+people, product, customers, tools):
 
-1. Шукай відповідь у `docs/`, `runbooks/`, `agents/` та `GLOSSARY.md`.
-2. Відповідай на основі знайденого й посилайся на конкретний файл.
-3. Якщо відповіді немає — так і скажи. **Не вигадуй** і не заповнюй прогалини
-   припущеннями, поданими як факт.
-4. Якщо знайдене виглядає застарілим чи суперечливим — зазнач це.
+1. Search for the answer in `docs/`, `runbooks/`, `agents/` and `GLOSSARY.md`.
+2. Base your answer on what you find, and cite the specific file.
+3. If there's no answer, say so. **Don't make things up**, and don't fill
+   gaps with assumptions presented as facts.
+4. If what you find looks outdated or contradictory, point that out.
 
-Відсутня відповідь — це сигнал, що знання треба задокументувати. Запропонуй
-створити відповідний документ через Pull Request.
+A missing answer is a signal that the knowledge needs to be documented.
+Suggest creating the relevant document through a Pull Request.
 
-### 2. Нова інформація — тільки через Pull Request
+### 2. New information only through Pull Requests
 
-- Ніколи не комітити й не пушити напряму в `main`.
-- Для будь-якої зміни: створи гілку → закомить → відкрий Pull Request.
-- Назва гілки: `docs/<короткий-опис>`, `runbook/<...>`, `agent/<...>` тощо.
-- Опис PR має пояснювати, що змінено і звідки інформація (джерело).
+- Never commit or push directly to `main`.
+- For any change: create a branch → commit → open a Pull Request.
+- Branch names: `docs/<short-description>`, `runbook/<...>`, `agent/<...>`,
+  and so on.
+- The PR description should explain what changed and where the information
+  came from (the source).
 
-### 3. Ніяких секретів і чутливих даних
+### 3. No secrets or sensitive data
 
-У жодному файлі цього репозиторію не повинно бути:
+No file in this repository may contain:
 
-- паролів, API-ключів, токенів доступу, приватних ключів, connection strings;
-- персональних даних клієнтів (імена, контакти, адреси, документи тощо);
-- фінансових деталей (банківські реквізити, суми контрактів, зарплати,
-  фінансова звітність).
+- passwords, API keys, access tokens, private keys or connection strings;
+- customer personal data (names, contacts, addresses, documents and so on);
+- financial details (bank details, contract amounts, salaries, financial
+  reports).
 
-Замість секрету — посилання на місце, де він зберігається (наприклад,
-"у менеджері паролів, сховище X"), без самого значення.
+Instead of a secret, link to where it's stored (for example, "in the password
+manager, vault X"), without the value itself.
 
-Якщо помітиш такі дані в репозиторії — не копіюй і не цитуй їх, а повідом
-користувача, щоб їх видалили (і ротували, якщо це секрет).
+If you notice such data in the repository, don't copy or quote it. Tell the
+user, so it can be removed (and rotated, if it's a secret).
 
-Детальні правила — у [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the detailed rules.
 
-## Стиль документів
+## Document style
 
-- Мова — українська, якщо документ не вимагає іншої.
-- Один документ — одна тема. Краще кілька коротких файлів, ніж один величезний.
-- Імена файлів — `kebab-case.md`.
-- Починай документ із заголовка `#` і 1–2 речень про те, що в ньому.
-- Посилайся на інші документи відносними шляхами замість дублювання.
-- Пиши так, щоб новий колега зрозумів без додаткових запитань.
-- Для нових документів використовуй шаблони з `templates/`, якщо вони є.
+- Language: English, the company's official working language.
+- One document, one topic. Several short files are better than one huge one.
+- File names: `kebab-case.md`.
+- Start each document with a `#` heading and 1–2 sentences on what it covers.
+- Link to other documents with relative paths instead of duplicating them.
+- Write so a new colleague can understand without asking follow-up questions.
+- Use the templates in `templates/` for new documents, when they exist.
